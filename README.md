@@ -31,3 +31,16 @@ $ git branch
 * main
 ```
 ## 2. Push all the branches to the remote repository
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git push origin --all`
+```
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VSenakosau/git_branch.git
+ * [new branch]      Bug_Reports -> Bug_Reports
+ * [new branch]      Charles -> Charles
+ * [new branch]      Checklists -> Checklists
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      Mobile_Testing -> Mobile_Testing
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+```
