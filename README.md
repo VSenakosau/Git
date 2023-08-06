@@ -30,7 +30,7 @@ $ git branch
   SQL
 * main
 ```
-## 2. Push all the branches to the remote repository
+## 2. Push all the branches to the remote repository.
 vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
 `git push origin --all`
 ```
@@ -44,3 +44,36 @@ To https://github.com/VSenakosau/git_branch.git
  * [new branch]      Postman -> Postman
  * [new branch]      SQL -> SQL
 ```
+By using the `-u` flag (--set-upstream) when pushing your branches, Git remembers the remote tracking branches for you. This makes it easier to work with remote branches in the future because you don't need to remember or specify the remote and branch names each time you pull or push changes.   
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git push -u origin --all`
+```
+Everything up-to-date
+branch 'Bug_Reports' set up to track 'origin/Bug_Reports'.
+branch 'Charles' set up to track 'origin/Charles'.
+branch 'Checklists' set up to track 'origin/Checklists'.
+branch 'Jmeter' set up to track 'origin/Jmeter'.
+branch 'Mobile_Testing' set up to track 'origin/Mobile_Testing'.
+branch 'Postman' set up to track 'origin/Postman'.
+branch 'SQL' set up to track 'origin/SQL'.
+branch 'main' set up to track 'origin/main'.
+```
+## 3. In Bug_Reports branch, create a text document with the structure of the bug report.
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git checkout Bug_Reports`
+Switched to branch 'Bug_Reports'   
+Your branch is up to date with 'origin/Bug_Reports'   
+
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)      
+`touch br_structure.txt`
+
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)   
+`nano br_structure.txt`   
+Add information   
+ctrl+O -> Enter (Save)      
+ctrl+X -> Exit (Exit)   
+
+
+
+
+
