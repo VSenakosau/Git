@@ -123,13 +123,37 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/VSenakosau/git_branch.git
    0ad410c..c8d6408  main -> main
 ```
-## 7. In the Checklists branch, create a document with checklist structure.
-vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)
-$ cat > Checklists_1.txt
+## 7. In the Checklists branch, create a file with checklist structure. 
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git checkout Checklists`
+
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)      
+`cat > Checklists_1.txt`   
+```
 1. Step number
 2. Step title
 3. Results
 4. Comments
 ctrl+D
+```
+## 8. Push a file with checklist structure to the remote repository
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)      
+`git add .`
+
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)   
+`git commit -m "Add file to Github"`
+
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)      
+`git push`
+```
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VSenakosau/git_branch.git
+   0ad410c..f130744  Checklists -> Checklists
+```
 
 
