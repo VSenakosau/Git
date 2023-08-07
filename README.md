@@ -155,5 +155,6 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/VSenakosau/git_branch.git
    0ad410c..f130744  Checklists -> Checklists
 ```
-
-
+## 9. In the remote repository, do a pull request of Checklists branch into main
+Go to GitHub website
+1. 
