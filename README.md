@@ -123,5 +123,13 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/VSenakosau/git_branch.git
    0ad410c..c8d6408  main -> main
 ```
+## 7. In the Checklists branch, create a document with checklist structure.
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)
+$ cat > Checklists_1.txt
+1. Step number
+2. Step title
+3. Results
+4. Comments
+ctrl+D
 
 
