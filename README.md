@@ -156,5 +156,30 @@ To https://github.com/VSenakosau/git_branch.git
    0ad410c..f130744  Checklists -> Checklists
 ```
 ## 9. In the remote repository, do a pull request of Checklists branch into main
-Go to GitHub website
-1. 
+Go to GitHub website   
+1. go to the `git_branch` remote repository   
+2. in the branches, choose `Checklists`    
+3. click on `Compare & pull request`    
+4. add a comment (if you want)       
+5. click on `Create pull request`   
+6. on the next merge page, click on the `pull merge request` and `confirm the merge`
+## 10. Synchronize remote and local main branches
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Checklists)   
+`git checkout main`   
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git pull`
+```
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 746 bytes | 46.00 KiB/s, done.
+From https://github.com/VSenakosau/git_branch
+   c8d6408..71f0efe  main       -> origin/main
+Updating c8d6408..71f0efe
+Fast-forward
+ Checklists_1.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 Checklists_1.txt
+```
+
