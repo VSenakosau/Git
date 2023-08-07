@@ -60,31 +60,28 @@ branch 'main' set up to track 'origin/main'.
 ```
 ## 3. In Bug_Reports branch, create a text document with the structure of the bug report.
 vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
-`git checkout Bug_Reports`
-Switched to branch 'Bug_Reports'   
-Your branch is up to date with 'origin/Bug_Reports'   
+`git checkout Bug_Reports`   
+Switched to branch 'Bug_Reports'      
+Your branch is up to date with 'origin/Bug_Reports'       
 
 vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)      
 `touch br_structure.txt`
 
 vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)   
-`nano br_structure.txt`   
-Add information   
-ctrl+O -> Enter (Save)      
-ctrl+X -> Exit (Exit)   
+`nano br_structure.txt`      
+Add information      
+ctrl+O -> Enter (Save)         
+ctrl+X -> Exit (Exit)      
 ## 4. Push the bug report structure to the remote repository
-vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)   
 `git add . `
-warning: in the working copy of 'br_structure.txt', LF will be replaced by CRLF the next time Git touches it
 
-vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)
-`git commit -m "Add br_structure.txt to Git"`
-[Bug_Reports c8d6408] Add br_structure.txt to Git
- 1 file changed, 16 insertions(+)
- create mode 100644 br_structure.txt
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)   
+`git commit -m "Add br_structure.txt to Git"`   
 
-vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)   
 `git push`
+```
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 12 threads
@@ -93,7 +90,38 @@ Writing objects: 100% (3/3), 793 bytes | 793.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/VSenakosau/git_branch.git
    0ad410c..c8d6408  Bug_Reports -> Bug_Reports
+```
+## 5. Merge Bug Reports branch into main
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (Bug_Reports)   
+`git checkout main`   
+Switched to branch 'main'   
+Your branch is up to date with 'origin/main'.   
+ 
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git merge Bug_Reports`
+```
+Updating 0ad410c..c8d6408
+Fast-forward
+ br_structure.txt | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+ create mode 100644 br_structure.txt
+```
+## 6. Push main to the remote repository.
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git status`
+```
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
 
-
+nothing to commit, working tree clean
+```
+vvsen@Vadim MINGW64 /c/vadim/qa/github/git_branch (main)   
+`git push origin main`
+```
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VSenakosau/git_branch.git
+   0ad410c..c8d6408  main -> main
+```
 
 
