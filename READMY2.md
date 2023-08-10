@@ -1,4 +1,4 @@
-# GITHUB - homework1 (JSON)
+# Github - homework1 (JSON)
 ## 1. Create a remote repository called JSON
 In the header on the main page on the right, click button `"+"` ->   
 In the dropdown select `"New repository"` ->   
